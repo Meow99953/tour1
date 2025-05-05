@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome</title>
+<style>
+  body {
+    background-color: #f5f5dc;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+  }
+  .button {
+    padding: 15px 30px;
+    margin: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+  }
+  .arabic { background-color: #4CAF50; color: white; }
+  .chinese { background-color: #D4AF37; color: red; }
+</style>
+<script>
+function chooseLanguage(lang) {
+  if (lang === 'ar') {
+    window.location.href = 'page2-ar.html';
+  } else if (lang === 'zh') {
+    window.location.href = 'page2-zh.html';
+  }
+}
+</script>
+</head>
+<body>
+
+<h1>اختر اللغة / 选择语言</h1>
+<button class="button arabic" onclick="chooseLanguage('ar')">العربية</button>
+<button class="button chinese" onclick="chooseLanguage('zh')">中文</button>
+
+</body>
+</html>
